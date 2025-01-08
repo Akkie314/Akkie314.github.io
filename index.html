@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Brainfuck</title>
+</head>
+<body>
+    <main>
+        <h1>BrainFuck Studio</h1>
+        <textarea id="Code" value=""></textarea>
+        <label>
+            <input type="checkbox" id="AsciiMax" checked>
+            Asciiの上限を127にする
+        </label>
+        <textarea type="text" id="Input" placeholder="Code Input"></textarea>
+        <textarea type="text" id="Output" readonly placeholder="Code Output"></textarea>
+        <div id="Memory"></div>
+    </main>
+    <script type="text/javascript" src="engine.js"></script>
+</body>
+</html>

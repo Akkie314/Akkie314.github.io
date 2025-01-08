@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap:2rem;
+
+    margin : 0 auto;
+}
+
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    resize:vertical;
+    padding:0.5rem;
+}
+
+textarea#Code {
+    height: 10rem;
+}
+
+div#Memory {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+div.MemoryCell {
+    width : 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+div.Pointer {
+    background-color: rgb(255, 247, 89);
+}
