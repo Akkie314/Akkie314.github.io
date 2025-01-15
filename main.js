@@ -24,7 +24,6 @@ class BrainFuck {
 
     ChangeSymbol(Symbol, NewSymbol) {
         if (this.Symbol.hasOwnProperty(Symbol)) {
-            console.log(`Change Symbol : ${Symbol} -> ${NewSymbol}`);
             this.Symbol[Symbol] = NewSymbol;
 
             this.Symbol.length = NewSymbol.length;
@@ -89,9 +88,6 @@ class BrainFuck {
                         break;
                     case this.Symbol["."]:
                         let OutputChar = String.fromCharCode(this.Memory[this.Pointer]);
-                        console.log(OutputChar);
-                        console.log(OutputChar.charCodeAt(0));
-                        console.log(this.AsciiMax);
                         if (OutputChar.charCodeAt(0) >= this.AsciiMax) {
                             OutputChar = "?";
                         }
@@ -173,6 +169,7 @@ const AutoInterpreter = () => {
     }
 }
 Element.Code.addEventListener("input", AutoInterpreter);
+
 Element.Input.addEventListener("input", AutoInterpreter);
 
 Element.Checkbox.addEventListener("change", () => {
